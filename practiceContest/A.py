@@ -9,11 +9,12 @@ def main():
     """
     メイン処理
     """
-    inputString = [input().split() for i in range(3)]
-    a = int(inputString[0][0])
-    b = int(inputString[1][0])
-    c = int(inputString[1][1])
-    s = inputString[2][0]
+    # 1行目
+    a = int(input())
+    # 2行目
+    b, c = map(int, input().split())
+    # 3行目
+    s = input()
     print(f"{a + b + c} {s}")
 
 
